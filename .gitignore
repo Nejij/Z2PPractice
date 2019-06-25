@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Z2PPractice/obj/Debug/netcoreapp2.1
+/Z2PPractice/obj
