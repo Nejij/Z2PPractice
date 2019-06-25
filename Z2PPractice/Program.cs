@@ -6,26 +6,46 @@ namespace Z2PPractice
     {
         static void Main(string[] args)
         {
-            Animal myAnimal = new Animal(name:"Bob");
+            Dog myDog = new Dog();
+            myDog.Name = "Bob";
+            myDog.NumberOfLegs = 4;
+            myDog.Bark();
 
-            
+            Lab myLab = new Lab();
+            myLab.Name = "Lassie";
 
-            Console.WriteLine(myAnimal.Name);
+            Console.WriteLine(myDog.Name);
         }
     }
 
+
     class Animal
     {
-        public string Name { get; }
+        public string Name { get; set; }
+        public String Color { get; set; }
 
-        public Animal()
+        public void Breathe()
         {
-            Name = "No Name";
+            Console.WriteLine("I'm Breathing");
         }
 
-        public Animal(string name)
+        public void Eat()
         {
-            Name = name;
+
         }
+    }
+    class Dog : Animal
+    {
+        public int NumberOfLegs { get; set; }
+        public void Bark()
+        {
+            Console.WriteLine("Woof");
+        }
+
+    }
+    
+    class Lab : Dog
+    {
+
     }
 }
